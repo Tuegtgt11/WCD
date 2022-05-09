@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="hello-t2010a-again:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>hello-t2010a-again</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="hello-t2010a-again-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="hello-t2010a-again:war exploded" />
+    </root>
+  </artifact>
+</component>

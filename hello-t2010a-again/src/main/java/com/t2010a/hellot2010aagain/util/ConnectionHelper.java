@@ -13,10 +13,13 @@ public class ConnectionHelper {
     public static Connection getConnection(){
         try {
             if(connection == null || connection.isClosed()){
+                Class.forName("com.mysql.jdbc.Driver");
                 connection = DriverManager.getConnection(CONNECTION_STRING, USERNAME, PASSWORD);
             }
         } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
         return connection;
     }

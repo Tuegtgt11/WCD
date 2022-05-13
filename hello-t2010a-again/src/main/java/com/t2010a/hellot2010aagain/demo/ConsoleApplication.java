@@ -1,9 +1,9 @@
 package com.t2010a.hellot2010aagain.demo;
 
 import com.t2010a.hellot2010aagain.entity.Student;
-import com.t2010a.hellot2010aagain.model.InMemoryStudentModel;
-import com.t2010a.hellot2010aagain.model.MySqlStudentModel;
-import com.t2010a.hellot2010aagain.model.StudentModel;
+import com.t2010a.hellot2010aagain.model.student.InMemoryStudentModel;
+import com.t2010a.hellot2010aagain.model.student.MySqlStudentModel;
+import com.t2010a.hellot2010aagain.model.student.StudentModel;
 
 import java.time.LocalDateTime;
 import java.util.List;

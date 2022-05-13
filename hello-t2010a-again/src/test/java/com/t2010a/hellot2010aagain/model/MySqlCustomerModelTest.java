@@ -1,6 +1,11 @@
 package com.t2010a.hellot2010aagain.model;
 
 import com.t2010a.hellot2010aagain.entity.Customer;
+<<<<<<< HEAD
+import com.t2010a.hellot2010aagain.model.customer.CustomerModel;
+import com.t2010a.hellot2010aagain.model.customer.MySqlCustomerModel;
+=======
+>>>>>>> origin/main
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

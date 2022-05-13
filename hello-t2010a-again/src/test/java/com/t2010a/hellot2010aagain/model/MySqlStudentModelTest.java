@@ -1,6 +1,8 @@
 package com.t2010a.hellot2010aagain.model;
 
 import com.t2010a.hellot2010aagain.entity.Student;
+import com.t2010a.hellot2010aagain.model.student.MySqlStudentModel;
+import com.t2010a.hellot2010aagain.model.student.StudentModel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

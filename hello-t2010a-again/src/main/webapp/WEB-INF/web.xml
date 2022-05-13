@@ -19,4 +19,44 @@
         <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>CreateCustomerServlet</servlet-name>
+        <servlet-class>com.t2010a.hellot2010aagain.controller.customer.CreateCustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCustomerServlet</servlet-name>
+        <url-pattern>/admin/customers/create</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>EditCustomerServlet</servlet-name>
+        <servlet-class>com.t2010a.hellot2010aagain.controller.customer.EditCustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditCustomerServlet</servlet-name>
+        <url-pattern>/admin/customers/edit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ListCustomerServlet</servlet-name>
+        <servlet-class>com.t2010a.hellot2010aagain.controller.customer.ListCustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ListCustomerServlet</servlet-name>
+        <url-pattern>/admin/customers/list</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DetailCustomerServlet</servlet-name>
+        <servlet-class>com.t2010a.hellot2010aagain.controller.customer.DetailCustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetailCustomerServlet</servlet-name>
+        <url-pattern>/admin/customers/detail</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DeleteCustomerServlet</servlet-name>
+        <servlet-class>com.t2010a.hellot2010aagain.controller.customer.DeleteCustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCustomerServlet</servlet-name>
+        <url-pattern>/admin/customers/delete</url-pattern>
+    </servlet-mapping>
 </web-app>

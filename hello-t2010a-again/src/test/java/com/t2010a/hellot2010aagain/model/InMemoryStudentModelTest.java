@@ -1,12 +1,11 @@
 package com.t2010a.hellot2010aagain.model;
 
 import com.t2010a.hellot2010aagain.entity.Student;
+import com.t2010a.hellot2010aagain.model.student.InMemoryStudentModel;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDateTime;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class InMemoryStudentModelTest {
 

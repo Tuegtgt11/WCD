@@ -1,15 +1,9 @@
 package com.t2010a.hellot2010aagain.demo;
 
 import com.t2010a.hellot2010aagain.entity.Customer;
-<<<<<<< HEAD
 import com.t2010a.hellot2010aagain.model.customer.CustomerModel;
 import com.t2010a.hellot2010aagain.model.customer.InMemoryCustomerModel;
 import com.t2010a.hellot2010aagain.model.customer.MySqlCustomerModel;
-=======
-import com.t2010a.hellot2010aagain.model.CustomerModel;
-import com.t2010a.hellot2010aagain.model.InMemoryCustomerModel;
-import com.t2010a.hellot2010aagain.model.MySqlCustomerModel;
->>>>>>> origin/main
 
 import java.time.LocalDateTime;
 import java.util.List;

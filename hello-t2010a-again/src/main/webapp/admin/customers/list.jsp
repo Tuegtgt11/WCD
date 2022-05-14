@@ -273,9 +273,9 @@
                                     <th><%=st.getPhone()%></th>
                                     <th><%=st.getImage()%></th>
                                     <th><%=st.getDobString()%></th>
-                                    <th><a href="/admin/customers/detail?id=<%=st.getId()%>">Detail</a>&nbsp;&nbsp;
-                                        <a href="/admin/customers/edit?id=<%=st.getId()%>">Edit</a>&nbsp;&nbsp;
-                                        <a href="/admin/customers/delete?id=<%=st.getId()%>" onclick="confirm('Are you sure?')">Delete</a></th>
+                                    <th><a href="${pageContext.request.contextPath}/admin/customers/detail?id=<%=st.getId()%>">Detail</a>&nbsp;&nbsp;
+                                        <a href="${pageContext.request.contextPath}/admin/customers/edit?id=<%=st.getId()%>">Edit</a>&nbsp;&nbsp;
+                                        <a href="${pageContext.request.contextPath}/admin/customers/delete?id=<%=st.getId()%>" onclick="confirm('Are you sure?')">Delete</a></th>
 
                                     </tbody>
                                     <%}%>

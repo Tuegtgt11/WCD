@@ -8,8 +8,7 @@ public interface CustomerModel {
     Customer create(Customer customer);
 
     List<Customer> findAll();
-
-
+    
     Customer findById(String Id);
 
     Customer update(String Id, Customer updateCustomer);

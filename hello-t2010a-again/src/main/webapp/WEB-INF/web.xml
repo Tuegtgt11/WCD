@@ -59,4 +59,12 @@
         <servlet-name>DeleteCustomerServlet</servlet-name>
         <url-pattern>/admin/customers/delete</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>RecentCustomerServlet</servlet-name>
+        <servlet-class>com.t2010a.hellot2010aagain.controller.customer.RecentCustomerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RecentCustomerServlet</servlet-name>
+        <url-pattern>/admin/customers/recentview</url-pattern>
+    </servlet-mapping>
 </web-app>

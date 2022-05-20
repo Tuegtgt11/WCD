@@ -1,11 +1,12 @@
 <%@ page import="java.util.List" %>
 <%@ page import="com.t2010a.hellot2010aagain.entity.Customer" %>
+<%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <%@ page contentType="text/html;charset=UTF-8" language="java" %>
     <%
-        List<Customer> listCustomer = (List<Customer>)request.getAttribute("listCustomer");
+        ArrayList<Customer> recentView = (ArrayList<Customer>) session.getAttribute("recentView");
     %>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -47,10 +48,10 @@
                 <div class="row">
                     <div class="col-12">
                         <!-- /.card -->
-                        <a href="/admin/customers/create">Create new student</a>
+                        <a href="/admin/customers/list">Back to list</a>
                         <div class="card">
                             <div class="card-header">
-                                <h3 class="card-title">List Customer</h3>
+                                <h3 class="card-title">Recent View</h3>
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
@@ -66,31 +67,16 @@
                                         <th>Action</th>
                                     </tr>
                                     </thead>
-                                    <%for (Customer st : listCustomer) {
+                                    <%for (Customer st :recentView) {
                                     %>
                                     <tbody>
-
                                     <th><%=st.getId()%></th>
                                     <th><%=st.getName()%></th>
                                     <th><%=st.getPhone()%></th>
                                     <th><%=st.getImage()%></th>
                                     <th><%=st.getDobString()%></th>
-                                    <th><a href="/admin/customers/detail?id=<%=st.getId()%>">Detail</a>&nbsp;&nbsp;
-                                        <a href="/admin/customers/edit?id=<%=st.getId()%>">Edit</a>&nbsp;&nbsp;
-                                        <a href="/admin/customers/delete?id=<%=st.getId()%>" onclick="return confirm('Are you sure?')">Delete</a></th>
                                     </tbody>
                                     <%}%>
-                                    <tfoot>
-                                    <tr>
-                                        <th>Id</th>
-                                        <th>Name</th>
-                                        <th>Phone</th>
-                                        <th>Image</th>
-                                        <th>DOB</th>
-                                        <th>Action</th>
-                                    </tr>
-                                    </tfoot>
-
                                 </table>
                             </div>
                             <!-- /.card-body -->
